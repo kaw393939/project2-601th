@@ -1,5 +1,10 @@
-def say_hello():
-    return "Hello, World!"
+from app.operations import addition
 
-def test_say_hello():
-    assert say_hello() == "Hello, World!"
+
+def test_addition():
+    a = 1
+    b = 2
+
+    c = addition(a,b)
+
+    assert c == 3
